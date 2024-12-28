@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Media Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cloud Media Storage</h1>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Upload Your Media</h2>
+            <input type="file" id="file-input" accept="image/*, video/*" multiple>
+            <button id="upload-btn">Upload</button>
+        </section>
+
+        <section id="media-gallery">
+            <h2>Your Media</h2>
+            <div id="gallery"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cloud Media Storage © 2024</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
